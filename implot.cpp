@@ -124,8 +124,10 @@ You can read releases logs https://github.com/epezent/implot/releases for more d
 - 2020/05/10 (0.2)  - Plot queries are pixel based by default. Query rects that maintain relative plot position have been removed. This was done to support multi-y-axis.
 
 */
+#ifndef IMGUI_DEFINE_MATH_OPERATORS
+#	define IMGUI_DEFINE_MATH_OPERATORS
+#endif
 
-#define IMGUI_DEFINE_MATH_OPERATORS
 #include "implot.h"
 #include "implot_internal.h"
 
